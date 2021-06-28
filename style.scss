@@ -1,0 +1,88 @@
+*{margin: 0; padding: 0; border: 0;}
+body {
+	background-color: rgb(27, 71, 178);
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	.navbar.navbar-1 .navbar-toggler-icon {
+		background-image: url("https://mdbcdn.b-cdn.net/img/svg/hamburger6.svg?color=000");
+		position: fixed;
+		top: 23px;
+		right: 23px;
+		height: 60px;
+		width: 60px;
+		z-index: 1;
+		@media screen and (max-width: 780px) {
+			top: 10px;
+			right: 10px;
+		}
+	}
+	.main {
+		position: absolute;
+		width: 94vw;
+		height: 85vh;
+		top: 51.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		border: 1px solid white;
+		@media screen and (max-width: 780px) {
+			
+			width: 90vw;
+			height: 100vh;
+		}
+		@media screen and (max-width: 530px) {
+		position: absolute;
+		top: 500px;
+		height: auto;
+		}
+		@media screen and (max-width: 440px) {
+			position: absolute;
+			top: 80vh;
+			height: auto;
+			}
+		
+		.script {
+			color: rgb(239, 213, 146);
+			width: 53%;
+			padding: 53px 47px;
+			@media screen and (max-width: 780px) {
+				width: 90vw;
+			}
+			
+			h2 {
+				font-weight: bold;
+				margin-bottom: 40px;
+			} 
+			p {
+				line-height: 35px;
+				margin-bottom: 30px;
+				@media screen and (max-width: 780px) {
+					margin-top: 300px;
+				}
+			}
+			button {
+				color: rgb(239, 213, 146);
+				background: none;
+				font-weight: bold;
+				@media screen and (max-width: 780px) {
+					
+					font-size: 3vw;
+				}
+			}
+		}
+		.square {
+			width: 47%;
+			height: 100.1%;
+			background-color: white;
+			@media screen and (max-width: 780px) {
+				width: 70vw;
+				height: 270px;
+				position: absolute;
+				top: 100px;
+
+			}
+		}
+	}
+}
